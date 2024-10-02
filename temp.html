@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello </h1>
+    <input type="text" class="input_user">
+    <button class="send">go </button>
+    <h1 class="response_h1"></h1>
+    <img class="image" src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="unabel to loda">
+</body>
+<script>
+    console.log('dd')
+    let name ;
+    if(name!=null){
+        console.log('hello no null');
+    }else{
+        console.log('name is null')
+    }
+    let unserput;
+let propm="government schemes for famer and agriculture related new"
+console.log("from console");
+let everyone = [];
+    console.log(typeof(everyone));
+document.querySelector('.send').addEventListener('click',()=>{
+    unserput= document.querySelector('.input_user').value;
+    console.log(unserput);
+    let crop =    unserput; 
+    console.log(crop);
+    generateAI(unserput);
+
+});
+const  API_KEY ="AIzaSyBSEa_R2AdP_T_wMwZlHaBcauOKL5IeAhk";
+const API_URL=`https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
+
+const generateAI= async(input)=>{
+try{
+    const response = await fetch(API_URL,{
+        method:"POST",
+        headers:{"content-type": "application/json"},
+        body:JSON.stringify({
+            contents:[{
+                role:"user",
+                parts:[{"text": `  ${input}`}]
+            }]
+        })
+    })
+    const data = await response.json();
+    //console.log(data9.candidates[0].content.parts[0].text);
+    
+     let every = data.candidates[0].content.parts[0].text;
+     everyone.push(every);
+
+     console.log(everyone);
+
+    
+document.querySelector(".response_h1").innerText=data.candidates[0].content.parts[0].text;
+ 
+}
+catch(error){
+console.log(error);
+}
+}
+
+</script>
+<script type="module ">
+  import{generateAI} from './geminiAI';  
+  console.log(generateAI('hello');)
+  
+ 
+  
+  
+  </script>
+</html>

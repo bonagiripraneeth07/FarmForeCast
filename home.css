@@ -1,0 +1,179 @@
+.home-bc {
+    width: 100%;
+
+
+}
+
+.season-description-kharif {
+    background-color: rgb(255, 225, 135);
+    font-family: poppins;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.season-description-rabi {
+    font-family: poppins;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(255, 251, 137);
+}
+
+.season-description-Zaid {
+    font-family: poppins;
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(203, 173, 144);
+    margin-bottom: 20px;
+}
+
+.seasons-brief {
+    backdrop-filter: blur(10px);
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-family: DM-sans;
+    border-radius: 10px;
+    box-shadow: rgba(226, 169, 84, 0.56) 0px 22px 70px 4px;
+    padding: 10px;
+}
+
+.seasonal-crop-options {
+    background-color: rgb(214, 211, 207);
+    padding: 10px;
+}
+
+.go-state-crop-btn {
+    padding: 5px 10px 5px 10px;
+    margin-left: 5px;
+    border-style: none;
+    color: white;
+    background-color: rgb(43, 191, 63);
+    border-radius: 2px;
+
+}
+
+.dropdown-seasonal-crop {
+    padding: 15px;
+    margin-top: 10px;
+    border-color: blue;
+    position: relative;
+    left: 20%;
+
+}
+
+
+.result-seasonal-crop {
+    font-size: 40px;
+    font-family: poppins;
+    background-color: rgb(255, 198, 196);
+    width: 900px;
+    position: relative;
+    left: 20%;
+    padding: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+#expenditure-response {
+    display: none;
+    background-color: rgb(233, 205, 132);
+    border-radius: 5px;
+    margin: 10px 15px 0px 15px;
+    font-family: poppins;
+    font-size: 30px;
+
+}
+
+.Calculate-Expenditure {
+    position: relative;
+    background-color: rgb(5, 0, 153);
+    padding-bottom: 20px;
+}
+
+.h1-calculate-avg-ex {
+    font-family: Outfit;
+    font-weight: 800;
+    position: relative;
+    left: 20%;
+    padding: 30px;
+    color: aliceblue;
+}
+
+.h2-calculate-avg-ex {
+    font-family: Outfit;
+    font-weight: 600;
+
+    padding: 30px;
+    color: aliceblue;
+}
+
+.state-select {
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.crop-placeholder {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.acres-placeholder {
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Estimate-btn {
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: brown;
+    color: white;
+    width: 90px;
+}
+
+.Estimate-btn:hover {
+    background-color: rgba(165, 42, 42, 0.714);
+
+}
+
+.Crop-duration-div {
+    background-color: rgba(59, 209, 86, 0.619);
+    padding: 10px;
+}
+
+.Crop-duration-h4 {
+    font-family: poppins;
+}
+
+.Crop-duration-check-placeholder {
+    border-style: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.Crop-duration-check-btn {
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+    background-color: blue;
+    color: white;
+    font-family: DM Sans;
+    transition: 0.3s;
+    width: 90px;
+}
+
+.Crop-duration-check-btn:hover {
+    background-color: white;
+    color: rgb(48, 1, 255);
+
+}
+
+.Crop-duration-check-response {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    border-radius: 10px;
+    display: none;
+}

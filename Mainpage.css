@@ -1,0 +1,70 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.custom-navbar {
+    background-color: rgb(26, 2, 111);
+    height: 80px;
+}
+
+.nav-item {
+    color: red;
+}
+
+.custome-nav-bar-opitons {
+    color: rgba(244, 244, 244, 0.795);
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.custome-nav-bar-opitons:hover {
+    border-radius: 3px;
+    background-color: rgba(249, 51, 51, 0.795);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+
+}
+
+.about-agri-div {
+    height: 100%;
+    background-color: rgba(85, 243, 7, 0.66);
+}
+
+.bc-image-home {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+
+.about-us-div {
+    font-family: poppins;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(24, 207, 64, 0.882);
+    color: rgb(255, 255, 255);
+
+}
+
+.get-started-btn {
+
+    background-color: rgb(255, 149, 0);
+    display: flex;
+    position: relative;
+    left: 47%;
+    margin-top: -50px;
+    backdrop-filter: blur(10px);
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.get-started-btn:hover {
+    background-color: rgb(240, 175, 83);
+
+}

@@ -1,0 +1,243 @@
+.weatherCondtion-div {
+    display: flex;
+    justify-content: space-evenly;
+    height: 700px;
+}
+
+.weather-widget-div {
+    background: rgb(238, 174, 202);
+    background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    width: 100%;
+    margin-right: 5px;
+    border-radius: 10px;
+
+}
+
+.weather-widget-div-input--btn-div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+
+}
+
+.weather-widget-div-input {
+    width: 400px;
+    height: 50px;
+    border-style: none;
+    border-radius: 5px;
+    padding-left: 30px;
+}
+
+.weather-widget-div-btn {
+    margin-left: -19%;
+    margin-top: -1px;
+    height: 52px;
+    width: 52px;
+    border-style: none;
+    padding: 2px;
+    transition: 0.5ms;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.weather-widget-div-btn:hover {
+    background-color: rgb(88, 88, 239);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.weather-summary-div {
+    background-color: aquamarine;
+    width: 100%;
+    margin-left: 5px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    font-family: Outfit;
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(59, 255, 58);
+    background: rgb(31, 187, 245);
+    background: linear-gradient(0deg, rgba(31, 187, 245, 1) 0%, rgba(240, 240, 240, 1) 100%);
+}
+
+.city-name-img {
+    position: relative;
+
+    left: 30%;
+    margin: 20px;
+    width: 500px;
+    display: grid;
+
+
+}
+
+.temperature-h1 {
+    font-weight: bold;
+    color: rgb(193, 112, 6);
+    font-size: 80px;
+    width: 100px;
+    position: relative;
+    left: 20%;
+    font-family: poppins;
+}
+
+.wind-h4 {
+    font-family: poppins;
+    color: rgb(10, 6, 209);
+}
+
+.humidity-h4 {
+    font-family: poppins;
+    color: rgb(10, 6, 209);
+}
+
+.weather-widget-city-name-h1 {
+    font-family: poppins;
+    color: rgb(219, 31, 31);
+    width: 200px;
+    padding: 20px;
+}
+
+.weatherconditions-images {
+    width: 200px;
+    height: 200px;
+}
+
+.sourround-div {
+    box-shadow: 0px 8px 16px 0px rgb(219, 88, 215);
+    border-radius: 30px;
+    margin: 10px;
+}
+
+.weather-description-images-div {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.weather-description-div {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.question-resopnse-divs {
+    padding: 10px;
+    font-family: poppins;
+    font-weight: bold;
+
+    padding-left: 20px;
+    border-radius: 10px 10px 0px 0px;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(214deg, rgba(248, 248, 248, 0.11537114845938379) 0%, rgba(255, 91, 10, 1) 100%);
+}
+
+.question-resopnse-answer-divs {
+    font-family: poppins;
+    font-size: 18px;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    padding-left: 20px;
+    background: rgb(248, 248, 248);
+    background: linear-gradient(214deg, rgba(248, 248, 248, 0.11537114845938379) 0%, rgba(85, 127, 232, 1) 100%);
+}
+
+.related-questions-div {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(253, 253, 253);
+    height: 130px;
+    display: none;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-family: DM sans;
+}
+
+.question {
+    height: 90px;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    background: rgb(63, 136, 231);
+}
+
+.question:hover {
+    box-shadow: rgba(74, 74, 80, 0.54) 0px 7px 29px 0px;
+}
+
+.related-videos {
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 40px;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+.agriculture-related-section {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.div {
+    padding: 10px;
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+    font-family: poppins;
+    border-radius: 10px;
+    background-color: rgb(174, 160, 202);
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.h1-heading {
+    font-weight: bold;
+    font-family: Outfit;
+    background-color: rgb(243, 79, 79);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.language-selection {
+    display: flex;
+    margin: 15px;
+
+}
+
+.language-select {
+    position: absolute;
+    right: 10%;
+    font-family: poppins;
+    border-radius: 5px;
+}
+
+.language-select-h {
+    position: absolute;
+    right: 16%;
+    color: white;
+    padding: 2px;
+    font-family: poppins;
+}
+
+.go-button {
+    position: absolute;
+    right: 7%;
+    border-radius: 5px;
+    color: rgb(5, 0, 95);
+    font-family: poppins;
+    background-color: rgb(237, 237, 246);
+    border-style: none;
+}

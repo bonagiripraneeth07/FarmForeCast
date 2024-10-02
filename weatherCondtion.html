@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmForecast | Weather Forecast</title>
+    <link rel="icon"   href="/images/_13c99c75-ffbc-4da2-90c9-f8e8fd19af84-Photoroom.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Mainpage.css">
+<link rel="stylesheet" href="weatherCondtion.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg   custom-navbar">
+        <div class="container-fluid">
+         
+          <a class="navbar-brand" href="/Mainpage.html"><img class="logo"  src="/images/_13c99c75-ffbc-4da2-90c9-f8e8fd19af84-Photoroom.png" alt=""></a>
+          <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+            
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-header ">
+              <li class="nav-item">
+                <a class="nav-link active custome-nav-bar-opitons" aria-current="page" href="/home.html">Home</a>
+              </li>
+               
+              <li class="nav-item"  >
+                <a  class="nav-link custome-nav-bar-opitons " href="/home.html#Calculate-Expenditure">Expenditure Calculator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custome-nav-bar-opitons" href="/weatherCondtion.html">Weather Forecast</a>
+                
+              </li>
+              <li class="language-selection ">
+               <span class="language-select-h">Select a language</span>
+              <select class="language-select" id="language-select">
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+              </select>
+              <button class="go-button">Go</button>
+               </li>
+            </ul>    
+            <form class="d-flex section">
+              <!--  <a class="bookingsbtn navbar navbar-expand-lg navbar-light bg-light m-1  "   href="./bookings.html">Bookings</a>
+             <button class="btn btn-outline-success custom-btn  " type="submit" id="signoutbutton">signout</button>-->
+            </form>
+          </div>
+        </div>
+        
+    </nav> 
+
+
+
+
+    <div class="weatherCondtion-div">
+            <div class="weather-widget-div">
+                <div class="weather-widget-div-input--btn-div"><input class="weather-widget-div-input" type="text" placeholder="enter city name">
+                     <img class="weather-widget-div-btn" src="images/weather-images/search.png" alt=""> <br>   </div>
+                
+                <div class="city-name-img" ><img class="weatherconditions-images" id='weatherconditions-images' src="images/weather-images/weatherconditions-images/clear.png" alt=""><br>
+                <h1 class="weather-widget-city-name-h1">maharastra <h1 class="temperature-h1"><b>21°</b></h1> </h1></div>
+                <div class="sourround-div"> 
+                <div class="weather-description-images-div">
+                    <img src="images/weather-images/humidity.png" alt="">  
+                     
+                     <img src="images/weather-images/wind.png" alt="">  
+                     
+                </div>
+                <div class="weather-description-div">
+                      <h4 class="humidity-h4"><b>Humidity</b> <br> 21% </h4> 
+                     <h4 class="wind-h4"><b>Wind</b> <br>12%</h4> 
+                </div>
+                </div>
+
+    </div>
+     
+    <div class="weather-summary-div"> 
+      <div class="summary-response-div">
+         </div>
+        <div class="related-questions-div" id="related-questions-div" >
+          Related Questions
+          <span class="question1 question">is it a good situation  to sow seeds of crops?</span>
+          <span class="question2 question" > is it a good time to harvest a crop?</span><br>
+          <span class="question3 question" >is it a good time to add ferstlizers to crop?</span>
+        </div>
+      </div>
+  </div>
+ <h1 style="font-family: Outfit;">Related Videos</h1><br>
+ 
+  <section class="related-videos">
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pTrJC7_nKkA?si=Zn-ZGZggEL5WeW88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JeU_EYFH1Jk?si=X192c_-ScjkvcLwG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/q7JnJ0oBa94?si=eLIedsgL8wNLf2MR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section> 
+<section  class="agriculture-related-section">
+<div class="insurance-div  div"   >insurance</div>
+<div class="schemes-div div"  >Govt. related schemes</div>
+<div class="market-div div"  >Market Trends</div>
+</section>
+ 
+<script type="module">
+ import{generateAI} from './geminiAI.js'
+    let lat ;
+    let long;
+   let cityName ;
+   let humidty;
+   let wind;
+   let temp;
+   let Condition;
+ let summarydata;
+ let weatherarray;
+ let language ;
+   let summary;
+   document.querySelector('.go-button').addEventListener('click',()=>{
+    language= document.getElementById('language-select').value;
+    console.log(language +"from location");
+    summarygenerate();
+    getInsurance();
+    getSchemes();
+    getMarkets(cityName);
+   })
+
+   let imagesrc= document.querySelector('weatherconditions-images');
+     function gotLocation(position){
+        console.log(position);
+        lat=    position.coords.latitude ;
+        long=     position.coords.longitude ;
+        console.log(lat , long)
+          autocheck();
+
+    }
+       function failedLocation(){
+        alert('please Allow Permisson to Your Location')
+    }
+    async function  getLocation(){
+        navigator.geolocation.getCurrentPosition(gotLocation,failedLocation)
+        
+
+
+    };
+    getLocation();
+    getInsurance();
+    getSchemes( );
+   
+
+    const APIkey='78b6962e489ffa4664b2c6bcefb95f97';
+    const URL_name='https://api.openweathermap.org/data/2.5/weather?units=metric';
+    document.querySelector('.weather-widget-div-btn').addEventListener('click',()=>{
+
+          cityName = document.querySelector('.weather-widget-div-input').value;
+      if (cityName!=''){
+         checkWeather(cityName)
+      }else{
+        alert('Please Enter a City name');
+      }
+    })
+  
+    async function checkWeather(cityName) {
+        const response = await fetch(URL_name + `&appid=${APIkey}&q=${cityName}`);
+        try{
+         let data =  await response.json();
+        humidty=data.main.humidity;
+        temp=Math.round( data.main.temp);
+        wind = data.wind.speed;
+        summarydata=data.main;
+        weatherarray=data.weather[0];
+        console.log(  summarydata,weatherarray )
+        Condition = data.weather[0].main;
+        console.log(cityName,humidty,wind,temp);
+        console.log(data.weather[0].main);
+        summarygenerate( );
+        getMarkets(cityName);
+        document.querySelector('.weather-widget-city-name-h1').innerText=(cityName);
+        document.querySelector('.temperature-h1').innerText=(temp+'°')
+        document.querySelector('.humidity-h4').innerHTML=(`Humidity <br> ${humidty}%` ) ;
+        document.querySelector('.wind-h4').innerHTML=(`Wind <br> ${wind}km/h` ) ;
+        if(Condition=='Clouds'){
+          imagesrc='images/weather-images/weatherconditions-images/clouds.png'
+          
+        }else if(Condition =='Clear'){
+          imagesrc='images/weather-images/weatherconditions-images/clear.png'
+        }
+        else if (Condition =='Drizzle'){
+          imagesrc ='images/weather-images/weatherconditions-images/drizzle.png'
+        }
+        else if(Condition =='Humidity'){
+          imagesrc='images/weather-images/weatherconditions-images/humidity.png'
+        }
+        else if(Condition =='Mist'){
+imagesrc='images/weather-images/weatherconditions-images/mist.png'
+        }
+        else if(Condition =='Rain'){
+          imagesrc='images/weather-images/weatherconditions-images/rain.png'
+ 
+        }
+        else if(Condition =='Snow'){
+imagesrc='images/weather-images/weatherconditions-images/snow.png'
+        }
+        else if (Condition =='Haze'){
+          imagesrc='images/weather-images/weatherconditions-images/haze.png'
+        }
+        else if (Condition =='Wind'){
+           imagesrc='images/weather-images/weatherconditions-images/wind.png'
+        }
+        document.getElementById('weatherconditions-images').src=imagesrc;
+        console.log(imagesrc)
+      }
+        catch(error){
+          console.log(error);
+          alert('City not Found');
+        }
+    }
+    const URL_lat_lng='https://api.openweathermap.org/data/2.5/weather?'
+    async function autocheck(){
+         const response =await fetch(URL_lat_lng + `lat=${lat}&lon=${long}&appid=${APIkey}&units=metric`);
+        let data = await response.json();
+        console.log(data );
+        cityName= data.name;
+        humidty=data.main.humidity;
+        temp=Math.round( data.main.temp);
+        wind = data.wind.speed;
+        summarydata=data.main;
+        weatherarray=data.weather[0];
+        console.log(cityName,humidty,wind,temp)
+        console.log(data.weather[0].main);
+        document.querySelector('.weather-widget-city-name-h1').innerText=(cityName );
+        document.querySelector('.temperature-h1').innerText=(temp+'°')
+        document.querySelector('.humidity-h4').innerHTML=(`Humidity <br> ${humidty}%` ) ;
+        document.querySelector('.wind-h4').innerHTML=(`Wind <br> ${wind}%` ) ;
+          summarygenerate( );
+          getMarkets(cityName);
+        if(Condition =='Clouds'){
+          imagesrc='images/weather-images/weatherconditions-images/clouds.png'
+          
+        }else if(Condition =='Clear'){
+          imagesrc='images/weather-images/weatherconditions-images/clear.png'
+        }
+        else if (Condition =='Drizzle'){
+          imagesrc ='images/weather-images/weatherconditions-images/drizzle.png'
+        }
+        else if(Condition =='Humidity'){
+          imagesrc='images/weather-images/weatherconditions-images/humidity.png'
+        }
+        else if(Condition =='Mist'){
+imagesrc='images/weather-images/weatherconditions-images/mist.png'
+        }
+        else if(Condition =='Wind'){
+          imagesrc='images/weather-images/weatherconditions-images/wind.png'
+        }
+        else if(Condition =='Snow'){
+imagesrc='images/weather-images/weatherconditions-images/snow.png'
+        }
+        else if (Condition =='Haze'){
+          imagesrc='images/weather-images/weatherconditions-images/haze.png'
+        }
+        else if (Condition =='Rain'){
+           imagesrc='images/weather-images/weatherconditions-images/rain.png'
+        }else{
+          imagesrc='images/weather-images/weatherconditions-images/drizzle.png'
+        }
+        document.getElementById('weatherconditions-images').src=imagesrc;
+        console.log(imagesrc)
+    }
+ 
+    async function summarygenerate( ) {
+      
+        summary = await generateAI(`give a summary for   weather data : temperature:${temp} ,city name: ${cityName},wind : ${wind}, humidity: ${humidty}, ${Condition} and estimate the next 2 days weather and state weather a Farmer can go to work in the agricultural lansds in that weather  in ${language}` );
+        await console.log(  );
+        document.getElementById('related-questions-div').style.display='flex'
+        document.querySelector('.summary-response-div').innerText=(summary );
+        console.log(summary + 'from 234');
+    }
+document.querySelector('.question1').addEventListener('click',()=>{
+ 
+   let question = document.querySelector('.question1').innerText;
+   document.querySelector('.summary-response-div').innerHTML += `<div class='question-resopnse-divs'>${question}</div>`
+  generatesummaryq(question);
+
+ 
+})
+ 
+
+document.querySelector('.question2').addEventListener('click',()=>{
+   let question = document.querySelector('.question2').innerText;
+   document.querySelector('.summary-response-div').innerHTML += `<div class='question-resopnse-divs'>${question}</div>`
+
+  generatesummaryq(question);
+    
+})
+document.querySelector('.question3').addEventListener('click',()=>{   
+   let question = document.querySelector('.question3').innerText;
+   document.querySelector('.summary-response-div').innerHTML += `<div class='question-resopnse-divs'>${question}</div>`
+
+  generatesummaryq(question);
+   
+})
+let question_response;
+   async function generatesummaryq(question) {
+    let prevsummmery= summary 
+    console.log(question);
+    question_response= await generateAI(`analyse the ${prevsummmery} weather and answer this question related to the weather and agriculture:${question}`)
+    console.log(prevsummmery + "  from prev summary")
+    console.log(question_response);
+    document.querySelector('.summary-response-div').innerHTML +=  `<div class='question-resopnse-answer-divs' >${question_response}</div> <br> <br>`
+   }
+//checkWeather();
+let insurance ;
+async function getInsurance(){
+insurance = await generateAI('what are the insurance policies that a farmer is elgible in india with links with numberings and ending with a <br> tag  in'+language );
+console.log(insurance)
+document.querySelector('.insurance-div').innerHTML=`<h1 class=h1-heading>Insurances available for farmers</h1> <br> <div>${insurance}</div>` 
+
+}
+let schemes ;
+async function getSchemes() {
+  schemes= await generateAI('government schemes for famer and agriculture related new  with links with numberings and ending with a <br> tag in ' +language )
+  document.querySelector('.schemes-div').innerHTML=`<h1 class=h1-heading >Govt.. Schemes for farmers</h1> <br> <div>${schemes}</div>` 
+}
+let markets ;
+async function getMarkets(cityName){
+markets = await generateAI('what are the crop that are more demand in :'+ cityName +'with numberings and ending with a <br> tag in '+ language);
+ document.querySelector('.market-div').innerHTML=`<h1 class=h1-heading>Top demanding crops at ${cityName}</h1> <br> <div>${markets}</div>` 
+}
+</script>
+</html>
+ 
