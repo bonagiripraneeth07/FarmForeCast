@@ -1,3 +1,7 @@
+![_13c99c75-ffbc-4da2-90c9-f8e8fd19af84](https://github.com/user-attachments/assets/a00fcefd-1bcb-4fa6-b6d5-c98133d8d374)
+
+
+
 FARMFORECAST is a user-friendly web application that assists individuals with little to  no agricultural experience by providing insights into agricultural seasons and real-time city-specific weather conditions. Utilizing Google's Gemini AI, the platform evaluates whether current weather is favorable for farming, helping users make informed decisions for better crop management and planning.
 
 
