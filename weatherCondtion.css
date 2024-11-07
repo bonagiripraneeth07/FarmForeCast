@@ -4,6 +4,38 @@
     height: 700px;
 }
 
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.custom-navbar {
+    background-color: rgb(26, 2, 111);
+    height: 80px;
+}
+
+.nav-item {
+    color: red;
+}
+
+.custome-nav-bar-opitons {
+    color: rgba(244, 244, 244, 0.795);
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.custome-nav-bar-opitons:hover {
+    border-radius: 3px;
+    background-color: rgba(249, 51, 51, 0.795);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+
+}
+
 .weather-widget-div {
     background: rgb(238, 174, 202);
     background: linear-gradient(90deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -19,6 +51,42 @@
     margin-top: 20px;
 
 
+}
+
+
+
+.navbar-collapse.show {
+    position: absolute;
+    /* or fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* or a percentage width */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Dark background for visibility */
+    padding: 15px;
+    z-index: 1050;
+    /* Higher z-index to bring it in front */
+}
+
+
+.navbar-collapse.show {
+    position: absolute;
+    top: 50px;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(5, 0, 98, 0.8);
+    /* Optional: background color */
+    width: 80%;
+    /* Adjust width as needed */
+    padding: 15px;
+    border-radius: 8px;
+    /* Optional: rounded corners */
+}
+
+.language-select-h {
+    display: none;
 }
 
 .weather-widget-div-input {
@@ -97,11 +165,13 @@
     color: rgb(219, 31, 31);
     width: 200px;
     padding: 20px;
+
 }
 
 .weatherconditions-images {
     width: 200px;
     height: 200px;
+
 }
 
 .sourround-div {
@@ -240,4 +310,208 @@
     font-family: poppins;
     background-color: rgb(237, 237, 246);
     border-style: none;
+}
+
+@media (max-width:1025px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .custome-nav-bar-opitons {
+        color: rgba(244, 244, 244, 0.795);
+        font-family: DM Sans;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 10px;
+        padding: 5px;
+
+    }
+
+    .language-select-h {
+        position: relative;
+        left: 90%;
+    }
+
+    .weather-widget-div {
+        width: 50%;
+    }
+
+    .weather-widget-div-input {
+        width: 240px;
+        font-size: 15px;
+    }
+
+    .weather-widget-div-btn {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        left: 20px;
+        top: 6px;
+    }
+
+    .weatherconditions-images {
+        width: 150px;
+        height: 150px;
+    }
+
+    .weather-widget-city-name-h1 {
+        font-size: 20px;
+    }
+
+    .temperature-h1 {
+        font-size: 43px;
+    }
+
+    .humidity-h4 {
+        font-size: 20px;
+    }
+
+    .wind-h4 {
+        font-size: 20px;
+    }
+
+    .summary-response-div {
+        font-size: 17px;
+    }
+
+    .question1 {
+        font-size: 10px;
+        width: auto;
+    }
+
+    .question2 {
+        font-size: 10px;
+        width: auto;
+    }
+
+    .question3 {
+        font-size: 10px;
+        width: auto;
+    }
+
+    .h1-heading {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:426px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .custome-nav-bar-opitons {
+        color: rgba(244, 244, 244, 0.795);
+        font-family: DM Sans;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 10px;
+        padding: 5px;
+
+    }
+
+    .language-select-h {
+        position: relative;
+        left: 90%;
+    }
+
+    .weather-widget-div {
+        width: 50%;
+    }
+
+    .weather-widget-div-input {
+        width: 120px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .weather-widget-div-btn {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        left: 17px;
+        top: 2px;
+    }
+
+    .weatherconditions-images {
+        width: 120px;
+        height: 120px;
+        position: relative;
+        right: 10%;
+
+    }
+
+    .weather-widget-city-name-h1 {
+        font-size: 20px;
+        position: relative;
+        right: 10%;
+
+    }
+
+    .temperature-h1 {
+        font-size: 35px;
+        left: 10px;
+
+
+    }
+
+    .related-videos {
+        display: none;
+    }
+
+    .humidity-h4 {
+        font-size: 15px;
+    }
+
+    .wind-h4 {
+        font-size: 15px;
+    }
+
+    .summary-response-div {
+        font-size: 12px;
+    }
+
+    .related-questions-div {
+        width: 100%;
+    }
+
+    .question1 {
+        font-size: 10px;
+        width: auto;
+        display: block;
+    }
+
+    .question2 {
+        font-size: 10px;
+        width: auto;
+        display: block;
+    }
+
+    .question3 {
+        font-size: 10px;
+        width: auto;
+        display: block;
+    }
+
+    .question-resopnse-answer-divs {
+        font-size: 10px;
+    }
+
+    .h1-heading {
+        font-size: 10px;
+    }
+
+    .insurance-div div {
+        font-size: 15px;
+    }
+
+    .schemes-div div {
+        font-size: 15px;
+    }
+
+    .market-div div {
+        font-size: 15px;
+    }
 }

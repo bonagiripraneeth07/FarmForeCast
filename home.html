@@ -29,7 +29,9 @@
          
           <a class="navbar-brand" href="/Mainpage.html"><img class="logo"  src="/images/_13c99c75-ffbc-4da2-90c9-f8e8fd19af84-Photoroom.png" alt=""></a>
           <button class="navbar-toggler  " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list hamBurger-menu" viewBox="0 0 16 16" >
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg></span>
           </button>
           <div class="collapse navbar-collapse  " id="navbarSupportedContent">
             
@@ -57,12 +59,12 @@
         
     </nav> 
       <img class="home-bc" src="/images/home-bc.jpg" alt="">
-      <h1 style="margin-top: -290px; position: relative;left: 35%;top: -150px; font-family: DM-sans;font-weight:700;font-size: 90px; ">Crop Seasons</h1>
+      <h1 class="crop-season-h1" >Crop Seasons</h1>
       <div class="seasons-brief" > India has three main cropping seasons: Zaid, Rabi, and Kharif. India’s vast and varied geographical settings, with distinct seasons for each, are home to crops. These crops significantly impact India’s agricultural economy and account for over 18% of India’s GDP, making them a vital industry for the stability of India’s economy. India leads the world in producing many crops, including wheat, rice, pulses, spices, fruits, and vegetables, making it the second-largest producer of agricultural produce worldwide.</div>
     <div class="seasons-description">
         <div class="season">
             <h1 class="season-heading">kharif</h1>
-            <img src="/images/seasonal crops bc/Kharif crop.png" alt="">
+            <img src="/images/seasonal crops bc/Kharif crop.png" class="season-crop-img" alt="">
             <div class="season-description-kharif">
                 <b>The Kharif season</b>, also known as the monsoon season, is a critical period for agriculture in South Asia, particularly in India. It generally spans from June to September, coinciding with the southwest monsoon rains. This season is pivotal for the cultivation of several key crops and has a significant impact on the agricultural calendar and economy of the region. <br> <br>
                 <b>Timing and Climate</b> <br>
@@ -83,7 +85,7 @@ Several crops are primarily grown during the Kharif season, taking advantage of 
         </div>
         <div class="season">
             <h1 class="season-heading">Rabi</h1>
-            <img src="/images/seasonal crops bc/Rabi-crop.png" alt="">
+            <img src="/images/seasonal crops bc/Rabi-crop.png" class="season-crop-img" alt="">
             <div class="season-description-rabi">
                
                <b> The Rabi </b> season is a crucial agricultural period in South Asia, particularly in India and Pakistan, characterized by its cooler and drier climate compared to the Kharif season. It spans from October to March and is vital for the cultivation of various winter crops. This season’s unique climatic conditions play a significant role in determining crop yields and agricultural productivity. <br> <br>
@@ -105,7 +107,7 @@ Several crops are primarily grown during the Kharif season, taking advantage of 
         </div>
         <div class="season">
             <h1 class="season-heading">Zaid</h1>
-            <img src="/images/seasonal crops bc/zaid-crop.png" alt="">
+            <img src="/images/seasonal crops bc/zaid-crop.png" class="season-crop-img" alt="">
             <div class="season-description-Zaid">
                
                <b>The Zaid</b> season is a relatively short agricultural period in South Asia, particularly in India and Pakistan, falling between the Kharif and Rabi seasons. It spans from April to June, coinciding with the pre-monsoon period. This season is crucial for the cultivation of certain crops that thrive in the warm temperatures and varying moisture conditions typical of this time. <br> <br>
@@ -130,8 +132,8 @@ Several crops are primarily grown during the Kharif season, taking advantage of 
 <div class="seasonal-crop-options">
 
 
-<span style="font-weight: 500;font-family: DM-sans;font-size: 30px; position: relative;left: 20%;
-">➤Seasonal crops According to  Regions </span>
+<span class="seasonal-crop-location" 
+ >➤Seasonal crops According to  Regions </span>
 <div class="dropdown-seasonal-crop  ">
   <span>Choose Your State</span>
 
@@ -148,7 +150,7 @@ Several crops are primarily grown during the Kharif season, taking advantage of 
       <option value="Uttar Pradesh">Uttar Pradesh   </option>
       <option value="Gujarat">Gujarat</option>
     </select><button class="go-state-crop-btn">Go</button><br>
-    <p style="padding: 10px 0px;  "><img src="images/info.png" alt=""> Get More Accurate Infomation by using     <b style="color: rgb(13, 24, 235); font-weight: 900; text-decoration:underline;"><a href="/weatherCondtion.html">Weather forecasting</a></b> </p>
+    <p class="simple-link" ><img src="images/info.png" alt=""> Get More Accurate Infomation by using     <b style="color: rgb(13, 24, 235); font-weight: 900; text-decoration:underline;"><a href="/weatherCondtion.html">Weather forecasting</a></b> </p>
 
   </div> 
   <section class="result-seasonal-crop">
@@ -314,5 +316,5 @@ console.log("crop name is not null")
  }
 })
 </script>
-                                                                                                          
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>                                                                                                    
 </html>

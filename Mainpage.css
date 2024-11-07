@@ -12,6 +12,36 @@
     color: red;
 }
 
+.navbar-collapse.show {
+    position: absolute;
+    /* or fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* or a percentage width */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Dark background for visibility */
+    padding: 15px;
+    z-index: 1050;
+    /* Higher z-index to bring it in front */
+}
+
+
+.navbar-collapse.show {
+    position: absolute;
+    top: 50px;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(5, 0, 98, 0.8);
+    /* Optional: background color */
+    width: 80%;
+    /* Adjust width as needed */
+    padding: 15px;
+    border-radius: 8px;
+    /* Optional: rounded corners */
+}
+
 .custome-nav-bar-opitons {
     color: rgba(244, 244, 244, 0.795);
     font-family: DM Sans;
@@ -67,4 +97,74 @@
 .get-started-btn:hover {
     background-color: rgb(240, 175, 83);
 
+}
+
+.hamBurger-menu {
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width:1024px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+
+}
+
+@media (max-width:769px) {
+    .about-us-div {
+
+        padding: 8px;
+        font-size: 15px;
+        background-color: rgba(24, 207, 64, 0.882);
+        color: rgb(255, 255, 255);
+
+    }
+
+
+
+    .get-started-btn {
+
+        left: 43%;
+
+
+    }
+}
+
+@media (max-width:426px) {
+    .about-us-div {
+
+        padding: 8px;
+        font-size: 13px;
+
+
+    }
+
+
+
+    .get-started-btn {
+
+        left: 37%;
+        margin-top: -40px;
+        width: 80px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .bc-image-home {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:321px) {
+    .bc-image-home {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+    }
 }

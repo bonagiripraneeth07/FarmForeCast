@@ -4,6 +4,39 @@
 
 }
 
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.custom-navbar {
+    background-color: rgb(26, 2, 111);
+    height: 80px;
+    width: 100%;
+}
+
+.nav-item {
+    color: red;
+}
+
+.custome-nav-bar-opitons {
+    color: rgba(244, 244, 244, 0.795);
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.custome-nav-bar-opitons:hover {
+    border-radius: 3px;
+    background-color: rgba(249, 51, 51, 0.795);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+
+}
+
 .season-description-kharif {
     background-color: rgb(255, 225, 135);
     font-family: poppins;
@@ -37,6 +70,36 @@
     padding: 10px;
 }
 
+.navbar-collapse.show {
+    position: absolute;
+    /* or fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* or a percentage width */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Dark background for visibility */
+    padding: 15px;
+    z-index: 1050;
+    /* Higher z-index to bring it in front */
+}
+
+
+.navbar-collapse.show {
+    position: absolute;
+    top: 50px;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(5, 0, 98, 0.8);
+    /* Optional: background color */
+    width: 80%;
+    /* Adjust width as needed */
+    padding: 15px;
+    border-radius: 8px;
+    /* Optional: rounded corners */
+}
+
 .seasonal-crop-options {
     background-color: rgb(214, 211, 207);
     padding: 10px;
@@ -61,6 +124,9 @@
 
 }
 
+.simple-link {
+    padding: 10px 0px;
+}
 
 .result-seasonal-crop {
     font-size: 40px;
@@ -107,6 +173,14 @@
 
     padding: 30px;
     color: aliceblue;
+}
+
+.seasonal-crop-location {
+    font-weight: 500;
+    font-family: DM-sans;
+    font-size: 30px;
+    position: relative;
+    left: 10%
 }
 
 .state-select {
@@ -176,4 +250,349 @@
     padding: 50px;
     border-radius: 10px;
     display: none;
+}
+
+.crop-season-h1 {
+    margin-top: -290px;
+    position: relative;
+    left: 35%;
+    top: -150px;
+    font-family: DM-sans;
+    font-weight: 700;
+    font-size: 90px;
+}
+
+.season-heading {}
+
+@media (max-width:1025px) {
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .custom-navbar {
+
+        width: 100%;
+    }
+
+    .season-crop-img {
+        width: 100%;
+    }
+
+    .result-seasonal-crop {
+        font-size: 30px;
+        font-family: poppins;
+        background-color: rgb(255, 198, 196);
+        width: 700px;
+        position: relative;
+        left: 20%;
+        padding: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+    }
+}
+
+@media (max-width:769px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .crop-season-h1 {
+        font-size: 50px;
+
+    }
+
+    .seasons-brief {
+
+        font-size: 20px;
+
+    }
+
+    .season-description-kharif {
+
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .season-description-rabi {
+
+        font-size: 20px;
+
+    }
+
+    .season-description-Zaid {
+
+        font-size: 20px;
+
+    }
+
+    .result-seasonal-crop {
+        font-size: 20px;
+        font-family: poppins;
+        background-color: rgb(255, 198, 196);
+        width: 400px;
+        position: relative;
+        left: 20%;
+        padding: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2-calculate-avg-ex {
+        font-size: 10px;
+    }
+
+    #expenditure-response {
+
+        font-size: 20px;
+
+    }
+
+    .Crop-duration-h4 {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:426px) {
+    .crop-season-h1 {
+        font-size: 30px;
+
+    }
+
+    .seasons-brief {
+
+        width: 100%;
+        font-size: 15px;
+        position: relative;
+        top: 20px;
+    }
+
+    .home-bc {
+        height: 500px;
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .season-heading {
+        display: none;
+    }
+
+    .season-description-kharif {
+        font-size: 15px;
+    }
+
+    .season-description-rabi {
+
+        font-size: 15px;
+
+    }
+
+    .season-description-Zaid {
+
+        font-size: 15px;
+
+    }
+
+    .result-seasonal-crop {
+        font-size: 15px;
+        font-family: poppins;
+        background-color: rgb(255, 198, 196);
+        width: 300px;
+        position: relative;
+        left: 10%;
+        padding: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .h1-calculate-avg-ex {
+        font-size: 20px;
+        left: 20px;
+    }
+
+    .h2-calculate-avg-ex {
+        font-size: 15px;
+    }
+
+    .Estimate-btn {
+        position: relative;
+        left: 40%;
+    }
+
+    #expenditure-response {
+
+        font-size: 20px;
+
+    }
+
+    .Crop-duration-h4 {
+        font-size: 15px;
+    }
+
+    .seasonal-crop-location {
+        font-weight: 500;
+        font-family: DM-sans;
+        font-size: 25px;
+        position: relative;
+        left: 10%
+    }
+
+    .dropdown-seasonal-crop {
+        position: relative;
+        left: 6%;
+    }
+
+    .simple-link {
+        font-size: 10px;
+    }
+
+    .Crop-duration-check-placeholder {
+        display: block;
+        position: relative;
+        left: 25%;
+    }
+
+    .Crop-duration-check-btn {
+        position: relative;
+        left: 40%;
+        top: 10px;
+    }
+}
+
+@media (max-width:321px) {
+    .crop-season-h1 {
+        font-size: 30px;
+        position: relative;
+        left: 20%;
+        top: 20px;
+    }
+
+    .seasons-brief {
+
+        width: 100%;
+        font-size: 10px;
+        position: relative;
+        top: 20px;
+    }
+
+    .home-bc {
+        height: 400px;
+        width: 100%;
+        object-fit: fill;
+    }
+
+    .season-heading {
+        display: none;
+    }
+
+    .season-description-kharif {
+        font-size: 10px;
+    }
+
+    .season-description-rabi {
+
+        font-size: 10px;
+
+    }
+
+    .season-description-Zaid {
+
+        font-size: 10px;
+
+    }
+
+    .result-seasonal-crop {
+        font-size: 10px;
+        font-family: poppins;
+        background-color: rgb(255, 198, 196);
+        width: 250px;
+        position: relative;
+        left: 10%;
+        padding: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .h1-calculate-avg-ex {
+        font-size: 15px;
+        left: 20px;
+    }
+
+    .h2-calculate-avg-ex {
+        font-size: 14px;
+    }
+
+    .state-select {
+        font-size: 10px;
+    }
+
+    .crop-placeholder {
+        font-size: 12px;
+        position: relative;
+        left: 40%;
+    }
+
+    .acres-placeholder {
+        display: block;
+        font-size: 12px;
+        position: relative;
+        left: 40%;
+    }
+
+    .Estimate-btn {
+        position: relative;
+        left: 40%;
+        font-size: 10px;
+    }
+
+    #expenditure-response {
+
+        font-size: 10px;
+
+    }
+
+    .Crop-duration-h4 {
+        font-size: 12px;
+
+    }
+
+    .seasonal-crop-location {
+        font-weight: 500;
+        font-family: DM-sans;
+        font-size: 20px;
+        position: relative;
+        left: 7%
+    }
+
+    .dropdown-seasonal-crop {
+        position: relative;
+        left: 4%;
+    }
+
+    .go-state-crop-btn {
+        font-size: 10px;
+    }
+
+    .simple-link {
+        font-size: 10px;
+    }
+
+    .Crop-duration-check-placeholder {
+        display: block;
+        position: relative;
+        left: 25%;
+    }
+
+    .Crop-duration-check-btn {
+        position: relative;
+        left: 40%;
+        top: 10px;
+    }
 }
